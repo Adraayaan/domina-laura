@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domina Laura | Sesiones Online & Presenciales</title>
+  <meta name="description" content="Sesiones de dominación online y presenciales. Ama fija, humillación, feminización, fetiches, BDSM y más.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a0a;
+      --bg-card: #141414;
+      --accent: #8b0000;
+      --accent-light: #c41e3a;
+      --gold: #c9a227;
+      --text: #e8e0d5;
+      --text-muted: #a89f91;
+      --border: #2a2a2a;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Cinzel', serif;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+
+    a {
+      color: var(--gold);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: var(--accent-light);
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      padding: 1.2rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(10, 10, 10, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: 'Cinzel', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      letter-spacing: 0.15em;
+    }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    /* Hero */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 6rem 2rem 4rem;
+      background: 
+        radial-gradient(ellipse at 50% 0%, rgba(139, 0, 0, 0.3) 0%, transparent 55%),
+        linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      max-width: 800px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      padding: 0.4rem 1.2rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.2rem);
+      margin-bottom: 1rem;
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero-subtitle {
+      font-size: 1.35rem;
+      color: var(--text-muted);
+      margin-bottom: 2.5rem;
+      font-style: italic;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 1rem 2.5rem;
+      font-family: 'Cinzel', serif;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .btn:hover {
+      background: var(--accent-light);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      margin-left: 1rem;
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: #0a0a0a;
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .section-line {
+      width: 60px;
+      height: 2px;
+      background: var(--gold);
+      margin: 0 auto 3rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 3/4;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-text p {
+      margin-bottom: 1.2rem;
+      color: var(--text-muted);
+    }
+
+    .about-text strong {
+      color: var(--gold);
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      aspect-ratio: 3/4;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.03);
+      border-color: var(--accent);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Services */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 2rem;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .service-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+    }
+
+    .service-card h3 {
+      color: var(--gold);
+      font-size: 1.15rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .service-card p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* Practices */
+    .practices-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+    }
+
+    .practice-tag {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 0.5rem 1.2rem;
+      font-size: 0.95rem;
+      color: var(--text);
+      transition: all 0.3s;
+    }
+
+    .practice-tag:hover {
+      border-color: var(--accent);
+      color: var(--gold);
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      background: 
+        radial-gradient(ellipse at 50% 50%, rgba(139, 0, 0, 0.2) 0%, transparent 70%);
+      padding: 5rem 2rem;
+      max-width: none;
+    }
+
+    .cta-inner {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta p {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .contact-info {
+      margin-top: 2rem;
+      font-size: 1.15rem;
+    }
+
+    .contact-info a {
+      color: var(--gold);
+      font-weight: 600;
+      font-size: 1.25rem;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2.5rem 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        display: none;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-outline {
+        margin-left: 0;
+        margin-top: 1rem;
+        display: inline-block;
+      }
+
+      .hero {
+        padding-top: 5rem;
+      }
+
+      .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .gallery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">DOMINA LAURA</div>
+    <nav>
+      <a href="#sobre">Sobre mí</a>
+      <a href="#galeria">Galería</a>
+      <a href="#sesiones">Sesiones</a>
+      <a href="#practicas">Prácticas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Dominación · Online & Real</div>
+      <h1>Domina <span>Laura</span><br>está esperando</h1>
+      <p class="hero-subtitle">
+        Sesiones individuales o ama fija. Humillación, feminización, fetiches, sadomasoquismo y mucho más.
+      </p>
+      <a href="#contacto" class="btn">Reservar sesión</a>
+      <a href="#sesiones" class="btn btn-outline">Ver opciones</a>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="section-line"></div>
+    <div class="about-grid">
+      <div class="about-photo">
+        <img src="foto1.jpg" alt="Domina Laura">
+      </div>
+      <div class="about-text">
+        <p>
+          Soy <strong>Laura</strong>. Ofrezco sesiones de dominación tanto <strong>online</strong> como <strong>presenciales</strong>. 
+          Puedes elegir sesiones puntuales o convertirme en tu <strong>ama fija</strong> (incluye chats diarios y quedadas).
+        </p>
+        <p>
+          Trabajo con total discreción, respeto a los límites acordados y un enfoque firmemente dominante. 
+          Si buscas humillación, control, feminización o explorar fetiches intensos, estás en el lugar correcto.
+        </p>
+        <p>
+          Todas las prácticas se realizan bajo consentimiento mutuo y comunicación clara.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2 class="section-title">Galería</h2>
+    <div class="section-line"></div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="foto1.jpg" alt="Foto 1">
+      </div>
+      <div class="gallery-item">
+        <img src="foto2.jpg" alt="Foto 2">
+      </div>
+      <div class="gallery-item">
+        <img src="foto3.jpg" alt="Foto 3">
+      </div>
+      <div class="gallery-item">
+        <img src="foto4.jpg" alt="Foto 4">
+      </div>
+      <div class="gallery-item">
+        <img src="foto5.jpg" alt="Foto 5">
+      </div>
+      <div class="gallery-item">
+        <img src="foto6.jpg" alt="Foto 6">
+      </div>
+    </div>
+  </section>
+
+  <section id="sesiones">
+    <h2 class="section-title">Tipos de sesión</h2>
+    <div class="section-line"></div>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Sesión Online</h3>
+        <p>Videollamada privada. Control total a distancia: tareas, humillación verbal, show, instrucciones en tiempo real. Ideal para empezar o si estás lejos.</p>
+      </div>
+      <div class="service-card">
+        <h3>Sesión Presencial</h3>
+        <p>Encuentro real. Face sitting, bondage, impacto, roleplay y todas las prácticas acordadas. Ambiente seguro y discreto.</p>
+      </div>
+      <div class="service-card">
+        <h3>Ama Fija</h3>
+        <p>Relación de dominación continua. Incluye chats diarios, tareas, control de rutina, humillación y quedadas presenciales periódicas. Tú decides el nivel de intensidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="practicas">
+    <h2 class="section-title">Prácticas</h2>
+    <div class="section-line"></div>
+    <div class="practices-list">
+      <span class="practice-tag">Humillación</span>
+      <span class="practice-tag">Feminización</span>
+      <span class="practice-tag">Sadomasoquismo</span>
+      <span class="practice-tag">Face Sitting</span>
+      <span class="practice-tag">Scat</span>
+      <span class="practice-tag">Fetiches</span>
+      <span class="practice-tag">Bondage</span>
+      <span class="practice-tag">Impact Play</span>
+      <span class="practice-tag">Roleplay</span>
+      <span class="practice-tag">Control financiero</span>
+      <span class="practice-tag">Tareas & Protocolos</span>
+      <span class="practice-tag">Y mucho más…</span>
+    </div>
+  </section>
+
+  <section class="cta" id="contacto">
+    <div class="cta-inner">
+      <h2>¿Listo para arrodillarte?</h2>
+      <p>Escríbeme y cuéntame qué buscas. Responderé con las condiciones, disponibilidad y precios.</p>
+      <p style="color: var(--gold); font-weight: 600; margin-bottom: 1.5rem;">Es necesario hacer una señal para reservar una sesión.</p>
+      <a href="https://wa.me/34621092574" class="btn" target="_blank" rel="noopener">Contactar por WhatsApp</a>
+      
+      <div class="contact-info">
+        <p>WhatsApp: <a href="https://wa.me/34621092574">+34 621 09 25 74</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Domina Laura · Todos los derechos reservados</p>
+    <p>Solo mayores de 18 años · Consentimiento y discreción absolutos</p>
+  </footer>
+
+</body>
+</html>
